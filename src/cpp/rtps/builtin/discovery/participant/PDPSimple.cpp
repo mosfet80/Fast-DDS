@@ -16,10 +16,12 @@
  * @file PDPSimple.cpp
  *
  */
+
 #include <rtps/builtin/discovery/participant/PDPSimple.h>
 
 #include <mutex>
 
+#include <fastdds/builtin/type_lookup_service/TypeLookupManager.hpp>
 #include <fastdds/dds/log/Log.hpp>
 #include <fastdds/rtps/builtin/data/BuiltinEndpoints.hpp>
 #include <fastdds/rtps/builtin/data/ParticipantProxyData.hpp>
@@ -28,9 +30,8 @@
 #include <fastdds/rtps/history/ReaderHistory.hpp>
 #include <fastdds/rtps/history/WriterHistory.hpp>
 #include <fastdds/rtps/participant/RTPSParticipantListener.hpp>
-
-#include <fastdds/builtin/type_lookup_service/TypeLookupManager.hpp>
 #include <fastdds/utils/IPLocator.hpp>
+
 #include <rtps/builtin/BuiltinProtocols.h>
 #include <rtps/builtin/data/NetworkConfiguration.hpp>
 #include <rtps/builtin/discovery/endpoint/EDPSimple.h>
@@ -46,6 +47,7 @@
 #include <rtps/reader/StatelessReader.hpp>
 #include <rtps/resources/TimedEvent.h>
 #include <rtps/writer/StatelessWriter.hpp>
+#include <utils/DirectSend.hpp>
 
 namespace eprosima {
 namespace fastdds {

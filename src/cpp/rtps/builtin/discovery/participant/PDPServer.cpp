@@ -22,6 +22,7 @@
 #include <mutex>
 #include <set>
 
+#include <fastdds/builtin/type_lookup_service/TypeLookupManager.hpp>
 #include <fastdds/dds/core/policy/QosPolicies.hpp>
 #include <fastdds/dds/log/Log.hpp>
 #include <fastdds/rtps/history/History.hpp>
@@ -30,7 +31,6 @@
 #include <fastdds/rtps/participant/RTPSParticipantListener.hpp>
 #include <fastdds/utils/TimedMutex.hpp>
 
-#include <fastdds/builtin/type_lookup_service/TypeLookupManager.hpp>
 #include <rtps/builtin/BuiltinProtocols.h>
 #include <rtps/builtin/discovery/database/backup/SharedBackupFunctions.hpp>
 #include <rtps/builtin/discovery/endpoint/EDPServer.hpp>
